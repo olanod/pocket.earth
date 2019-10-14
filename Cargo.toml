@@ -1,0 +1,14 @@
+[package]
+name = "pocket_earth"
+version = "0.1.0"
+authors = ["Daniel Olano <daniel.olano@daimler.com>"]
+edition = "2018"
+
+[dependencies]
+osmpbf = "0.1.13"
+s2 = "0.0.9"
+failure = "0.1.5"
+capnp = "0.10.3"
+
+[build-dependencies]
+capnpc = "0.10.1"

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#222">
+	<title>🌎 Pocket.Earth</title>
+	<style>
+	 :root {
+		 --color-main: #09D;
+		 --color-bg: #222;
+		 --color-bg-alt: #161616;
+		 --color-text: #EDEDED;
+		 --text-size: calc(0.8em + 0.5vmin);
+	 }
+	 html, body { margin: 0; padding: 0; }
+	 body {
+		 color: var(--color-text);
+		 background: var(--color-bg);
+		 background-image:
+			 repeating-linear-gradient(45deg, transparent, transparent 59px, var(--color-bg-alt) 60px),
+			 repeating-linear-gradient(-45deg, transparent, transparent 59px, var(--color-bg-alt) 60px);
+		 font-family: sans-serif;
+		 font-size: var(--text-size);
+		 overflow-x: hidden;
+		 display: flex;
+		 flex-direction: column;
+		 min-height: 100vh;
+	 }
+	 a {
+		 color: var(--color-main);
+		 text-decoration: none;
+	 } a:hover, a:focus {
+		 text-decoration: underline;
+		 outline: none;
+	 }
+	 main {
+		 margin: auto;
+		 width: 60vmin;
+		 min-width: 90%;
+		 text-align: center;
+		 padding: 1rem 0;
+	 } main p {
+		 font-size: 1.2em;
+		 text-shadow: 0 2px 5px #000;
+	 } main img {
+		 width: 100%;
+		 max-width: 50vh;
+	 }
+	 #gh { fill: var(--color-text); width: 2em; }
+	 #gh:hover, #gh:focus { fill: var(--color-main); }
+	</style>
+</head>
+<body>
+	<main>
+		<img alt="Pocket.Earth" src="pocket_earth.svg"/>
+		<p>Small maps for great people</p>
+		<p><a href="https://github.com/olanod/pocket.earth"><svg id="gh" viewBox="0 0 11.5 11.21"><path d="M 5.7460441,-1.0697021e-7 C 2.572808,-1.0697021e-7 0,2.5728099 0,5.7467499 0,8.28569 1.646414,10.4394 3.9299441,11.19964 c 0.287514,0.0526 0.392289,-0.12489 0.392289,-0.27729 0,-0.13617 -0.0049,-0.49776 -0.0078,-0.9771899 C 2.7159971,10.29229 2.378742,9.17469 2.378742,9.17469 2.117333,8.51077 1.740567,8.3340201 1.740567,8.3340201 c -0.521759,-0.3563001 0.03951,-0.34925 0.03951,-0.34925 0.576791,0.0406 0.8801801,0.5923198 0.8801801,0.5923198 0.512586,0.87806 1.3451419,0.62441 1.6725199,0.4773102 0.05221,-0.37113 0.2003771,-0.6244201 0.364772,-0.768 C 3.421552,8.14141 2.079938,7.6482201 2.079938,5.4461898 2.079938,4.8189501 2.303952,4.30601 2.6715461,3.90419 2.612276,3.7588499 2.415077,3.1746499 2.7276362,2.3833699 c 0,0 0.4826,-0.15452 1.5804438,0.5891401 0.458258,-0.1277101 0.9500311,-0.1912101 1.4386279,-0.1933202 0.4878922,0.00201 0.9796643,0.0656 1.4386282,0.1933202 1.097139,-0.7436601 1.5786799,-0.5891401 1.5786799,-0.5891401 0.3136201,0.79128 0.1164172,1.37548 0.05715,1.5208201 0.3683,0.40182 0.5909032,0.9147601 0.5909032,1.5419998 0,2.2076802 -1.3437312,2.6934502 -2.623961,2.8356201 C 6.9944832,8.4592601 7.17828,8.80992 7.17828,9.34614 c 0,0.768 -0.0071,1.38783 -0.0071,1.57621 0,0.15382 0.103364,0.33267 0.395111,0.27658 2.28177,-0.76164 3.926773,-2.9139401 3.926773,-5.4521801 0,-3.17394 -2.5731608,-5.74675000697021 -5.747103,-5.74675000697021" /></svg></a></p>
+	</main>
+</body>
+</html>
